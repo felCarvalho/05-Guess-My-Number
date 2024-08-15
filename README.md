@@ -15,4 +15,5 @@ Regras do GAME!!!
 #Numero aleatorio só muda quando clica em 'De Novo' ou recarregando a página;
 
 #Proibido digitar números igual a 0 ou <;
+
 #Números de tentativa não diminui se o número for < ou igual a 0, pois o game simplesmete vai esperar um número válido;
