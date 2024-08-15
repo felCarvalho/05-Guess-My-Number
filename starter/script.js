@@ -32,6 +32,9 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.highscore').textContent = recorde;
     return;
   }
+
+  //aqui verificamos se score é maior ou menor que 0 && se numberSecreto for menor ou maior que guess(numero digitado nno input!!)
+  //score-- dimiui o score de 20 em meos 1
   if (score > 0 && numberSecreto < guess) {
     document.querySelector('.message').textContent = `📈 Número Alto !`;
     score--;
@@ -46,6 +49,7 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
+//estabelecendo um reset para as configurações padrões do game antes de iniciar o GAME.
 document.querySelector('.again').addEventListener('click', function () {
   numberSecreto = Math.trunc(Math.random() * 20) + 1;
   score = 20;
