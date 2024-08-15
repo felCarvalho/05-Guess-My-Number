@@ -18,9 +18,8 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = `⛔Número Inválido !!`;
     return;
   }
-
   //se guess for igual ao número sorteado, implementa esse código.
-  if (guess === numberSecreto) {
+  else if (guess === numberSecreto) {
     document.querySelector('.message').textContent = `🎉📊 Meus Parabéns !!`;
     document.querySelector('.number').textContent = numberSecreto;
     document.querySelector('body').style.backgroundColor = `#60b347`;
@@ -32,10 +31,9 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.highscore').textContent = recorde;
     return;
   }
-
   //aqui verificamos se score é maior ou menor que 0 && se numberSecreto for menor ou maior que guess(numero digitado nno input!!)
   //score-- dimiui o score de 20 em meos 1
-  if (score > 0 && numberSecreto < guess) {
+  else if (score > 0 && numberSecreto < guess) {
     document.querySelector('.message').textContent = `📈 Número Alto !`;
     score--;
     document.querySelector('.score').textContent = score;
